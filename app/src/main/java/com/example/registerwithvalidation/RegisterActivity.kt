@@ -50,8 +50,7 @@ class RegisterActivity : AppCompatActivity() {
                 }
             }
             .addOnFailureListener { // 파이어베이스의 데이터와 중복됐을 경우
-                Toast.makeText(this, "이미 가입된 이메일입니다.\n다른 이메일을 입력해주세요.", Toast.LENGTH_SHORT).show()
-                etEmail.text.clear()
+                Toast.makeText(this, "[회원가입 실패]", Toast.LENGTH_SHORT).show()
             }
         return
     }
